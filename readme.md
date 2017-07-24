@@ -82,12 +82,24 @@ To use the class `Meta` (`Elhardoum\MetaPHP\Meta`), make sure also the database 
 ```php
 $Meta = Meta::instance(true);
 $Meta->group('custom'); // set a custom group for the meta
-$Meta->update(
-  $key,
-  $value, // a value
-  $object_id, // if required, like in users, posts (the ID) defaults to 0,
+
+$Meta->get(
+  $key, // meta key
+  $object_id, // if required, like in users, posts (the ID) defaults to null,
+  $default_value=null // a default value to be returned, not required
 );
+
+$Meta->update(
+  $key, // meta key
+  $value, // a value
+  $object_id=null // if required, like in users, posts (the ID) defaults to null,
+);
+
+$Meta->delete(
+  $key, // meta key
+  $object_id=null // if required, like in users, posts (the ID) defaults to null,
+);
+
 ```
 
 ... more to come.
-
