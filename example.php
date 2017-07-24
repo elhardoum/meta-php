@@ -1,9 +1,9 @@
 <?php
 
 defined ( 'DB_HOST' ) || define ( 'DB_HOST', 'localhost' );
-defined ( 'DB_NAME' ) || define ( 'DB_NAME', 'test2' );
+defined ( 'DB_NAME' ) || define ( 'DB_NAME', 'testdb' );
 defined ( 'DB_USER' ) || define ( 'DB_USER', 'root' );
-defined ( 'DB_PASS' ) || define ( 'DB_PASS', '2414211' );
+defined ( 'DB_PASS' ) || define ( 'DB_PASS', '' );
 
 include __DIR__ . '/Src/loader.php';
 
