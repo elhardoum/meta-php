@@ -100,6 +100,8 @@ You are free to create a custom group and use it.
 To use the class `Meta` (`Elhardoum\MetaPHP\Meta`), make sure also the database class `Database` (same namespace) is included as well.
 
 ```php
+use Elhardoum\MetaPHP\Meta;
+
 $Meta = Meta::instance(true);
 $Meta->group('custom'); // set a custom group for the meta
 
