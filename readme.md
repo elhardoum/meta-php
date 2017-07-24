@@ -17,7 +17,18 @@ From my setup, I have Redis configured and it's easier to cache these meta for p
 
 `git clone https://github.com/elhardoum/meta-php`
 
-2. Define the database credentials, and include the `loader.php` file into your setup
+2. Create the `meta` table:
+
+```sql
+create table if not exists meta (
+  `object_id` bigint(20) default 0,
+  `meta_key` varchar(255) not null,
+  `meta_value` LONGTEXT not null,
+  primary key(meta_key, object_id)
+);
+```
+
+3. Define the database credentials, and include the `loader.php` file into your setup
 
 ```php
 defined ( 'DB_HOST' ) || define ( 'DB_HOST', '<database-host>' );
@@ -28,7 +39,7 @@ defined ( 'DB_PASS' ) || define ( 'DB_PASS', '<database-password>' );
 include '/path/to/meta-php/Src/loader.php';
 ```
 
-3. Now enjoy the API!
+4. Now enjoy the API!
 
 ## API
 
