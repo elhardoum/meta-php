@@ -75,6 +75,8 @@ update_post_meta( $post_id, $meta_key, $meta_value );
 delete_post_meta( $post_id, $meta_key );
 ```
 
+You are free to create a custom group and use it.
+
 To use the class `Meta` (`Elhardoum\MetaPHP\Meta`), make sure also the database class `Database` (same namespace) is included as well.
 
 ```php
