@@ -47,6 +47,9 @@ update_option( $option_name, $option_value );
 
 // delete
 delete_option( $option_name );
+
+// delete all
+delete_all_options();
 ```
 
 2. User Meta
@@ -60,6 +63,9 @@ update_user_meta( $user_id, $meta_key, $meta_value );
 
 // delete
 delete_user_meta( $user_id, $meta_key );
+
+// delete all
+delete_all_user_meta( $user_id );
 ```
 
 3. Post Meta
@@ -73,6 +79,9 @@ update_post_meta( $post_id, $meta_key, $meta_value );
 
 // delete
 delete_post_meta( $post_id, $meta_key );
+
+// delete all
+delete_all_post_meta( $post_id );
 ```
 
 You are free to create a custom group and use it.
@@ -99,7 +108,6 @@ $Meta->delete(
   $key, // meta key
   $object_id=null // if required, like in users, posts (the ID) defaults to null,
 );
-
 ```
 
 ... more to come.
