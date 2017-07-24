@@ -97,10 +97,10 @@ delete_all_post_meta( $post_id );
 
 You are free to create a custom group and use it.
 
-To use the class `Meta` (`Elhardoum\MetaPHP\Meta`), make sure also the database class `Database` (same namespace) is included as well.
+To use the class `Meta` (`MetaPHP\Meta`), make sure also the database class `Database` (same namespace) is included as well.
 
 ```php
-use Elhardoum\MetaPHP\Meta;
+use MetaPHP\Meta;
 
 $Meta = Meta::instance(true);
 $Meta->group('custom'); // set a custom group for the meta

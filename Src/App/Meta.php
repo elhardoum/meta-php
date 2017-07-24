@@ -1,6 +1,6 @@
 <?php
 
-namespace Elhardoum\MetaPHP;
+namespace MetaPHP;
 
 /**
   * Meta class

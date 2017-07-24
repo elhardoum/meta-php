@@ -1,6 +1,6 @@
 <?php
 
-use Elhardoum\MetaPHP\Meta;
+use MetaPHP\Meta;
 
 /**
   * Config
