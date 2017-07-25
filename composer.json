@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Makes it easier saving meta data into the database, inspired by WordPress meta (users, options, posts, etc.)",
     "license": "GPL-2.0",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "elhardoum",
