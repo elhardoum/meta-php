@@ -13,11 +13,9 @@ From my setup, I have Redis configured and it's easier to cache these meta for p
 
 ## Installation
 
-`composer require elhardoum/meta-php`
+1. Require the package with composer:
 
-1. Download the repo into your project
-
-`git clone https://github.com/elhardoum/meta-php`
+`composer require "elhardoum/meta-php:*@dev"`
 
 2. Create the `meta` table:
 
