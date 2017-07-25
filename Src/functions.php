@@ -2,18 +2,6 @@
 
 use MetaPHP\Meta;
 
-/**
-  * Config
-  */
-
-defined ( 'DB_HOST' ) || define ( 'DB_HOST', 'localhost' );
-defined ( 'DB_NAME' ) || define ( 'DB_NAME', '' );
-defined ( 'DB_USER' ) || define ( 'DB_USER', '' );
-defined ( 'DB_PASS' ) || define ( 'DB_PASS', '' );
-
-require_once __DIR__ . '/App/Database.php';
-require_once __DIR__ . '/App/Meta.php';
-
 function metaphp($fresh=null) { return Meta::instance($fresh); }
 
 function metaphp_options() {

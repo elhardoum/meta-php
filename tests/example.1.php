@@ -1,11 +1,6 @@
 <?php
 
-defined ( 'DB_HOST' ) || define ( 'DB_HOST', 'localhost' );
-defined ( 'DB_NAME' ) || define ( 'DB_NAME', 'testdb' );
-defined ( 'DB_USER' ) || define ( 'DB_USER', 'root' );
-defined ( 'DB_PASS' ) || define ( 'DB_PASS', '' );
-
-include __DIR__ . '/Src/loader.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 /**
   * Update an option to save custom data e.g setting into db
