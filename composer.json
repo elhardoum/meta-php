@@ -1,11 +1,13 @@
 {
     "name": "elhardoum/meta-php",
+    "type": "library",
     "description": "Makes it easier saving meta data into the database, inspired by WordPress meta (users, options, posts, etc.)",
     "license": "GPL-2.0",
     "authors": [
         {
             "name": "elhardoum",
-            "email": "elhardoumar@gmail.com"
+            "email": "elhardoumar@gmail.com",
+            "homepage": "https://samelh.com"
         }
     ],
     "require": {
